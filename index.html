@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" charset="utf-8" content="user-scalable=0;" />
+		<title>程序员养成计划</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<script type="text/javascript" src="js/js.js"></script>
+	</head>
+    <body>
+	<div id="music">
+        <img src="img/music_on.png" id="music_photo" onclick="music()" name="music_on"/>
+    </div>
+	<audio autoplay="autoplay" loop="loop" id="audio">
+		<source src="music/music.mp3" type="audio/mp3"></source>
+	</audio>
+		<div id="loading">
+			<img src="img/load_img.png"/>
+			<p>loading...</p>
+		</div>
+		<div id="homePage">
+			<div class="homeTop"> 
+				<h1>程序猿养成计划</h1>
+				<h2>HELLOWORLD!</h2>
+				<h5>@一只大恐龙</h5>
+				<img src="img/home_img.png"/>
+			</div>			
+			<div class="homeBottom">
+				<table border="0" >      
+					<tr>
+						<td class="txt" width="30%">姓名：</td>
+						<td colspan="2"><input type="text" id="nameSub" maxlength="8"/></td>
+					</tr>
+					<tr>
+						<td class="txt">性别：</td>
+						<td><input type="button" id="male" value="蓝僧" onclick="maleClick()" name="true"/></td>
+						<td><input type="button" id="formale" value="铝纸" onclick="formaleClick()"/></td>
+					</tr>
+					<tr>
+						<td colspan="3"><input type="button" id="sumbit" value="开启我的养成计划"  onclick="sumbitClick()"/></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+			<div id="resultPage">
+				<div class="homeTop">
+					<h1>程序猿养成计划</h1>
+					<h2>HELLOWORLD!</h2>
+					<h5>@一只大恐龙</h5>
+			    </div>
+			<div class="ressultMiddle">
+				<textarea id="textView" readonly="readonly" ></textarea><br />
+				<input type="button" id="btnNext"value="继续我的养成计划" onclick="next()"/>
+			</div>
+			<div class="resultBottom">
+				<img src=""/>
+			</div>
+		</div>
+	</body>
+</html>
